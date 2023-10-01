@@ -16,7 +16,7 @@ export default function ChannelCard({channelDetails}:any){
             
         }} 
         >
-            <Link to='/'>
+            <Link to={`/channel/${channelDetails?.id?.channelId}`}>
             
             <CardContent sx={{display:'flex',
             flexDirection:'column',
@@ -40,8 +40,8 @@ export default function ChannelCard({channelDetails}:any){
                     }}/>
             </Typography> 
             {channelDetails?.statistics?.subscriberCount &&(
-                    <Typography>
-                        {channelDetails.statistics.subscriberCount}
+                    <Typography color='gray'>
+                        {channelDetails.statistics.subscriberCount} subscriber
                     </Typography>
                 )
             }
