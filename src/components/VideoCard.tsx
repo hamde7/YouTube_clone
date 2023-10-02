@@ -6,11 +6,11 @@ type propsType={
 }
 export default function VideoCard({videos}:propsType){
     return(
-        <Card sx={{width:{md:'320px' ,xs :'100%'} , 
+        <Card sx={{width:{sm :'358px' , md:'320px' ,xs :'100%'} , 
                 borderRadius:0, 
                 boxShadow:"none"}}>
             <CardMedia image={videos.snippet.thumbnails.high.url}
-                        sx={{width:{sm : '358' , xs:'100%'} , height:180}}
+                        sx={{width:{sm :'358px' , md:'320px' ,xs :'100%'} , height:180}}
             />
             <CardContent sx={{backgroundColor:"#1e1e1e",height:"105px"}}>
                 <Typography variant="subtitle1" fontWeight="bold" color="white">
