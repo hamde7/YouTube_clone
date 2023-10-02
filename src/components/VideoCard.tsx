@@ -9,14 +9,17 @@ export default function VideoCard({videos}:propsType){
         <Card sx={{width:{sm :'358px' , md:'320px' ,xs :'100%'} , 
                 borderRadius:0, 
                 boxShadow:"none"}}>
-            <CardMedia image={videos.snippet.thumbnails.high.url}
-                        sx={{width:{sm :'358px' , md:'320px' ,xs :'100%'} , height:180}}
-            />
+                <Link to={`/video/${videos.id.videoId}`}>
+                
+                <CardMedia image={videos.snippet.thumbnails.high.url}
+                            sx={{width:{sm :'358px' , md:'320px' ,xs :'100%'} , height:180}}
+                />
+                </Link>
             <CardContent sx={{backgroundColor:"#1e1e1e",height:"105px"}}>
                 <Typography variant="subtitle1" fontWeight="bold" color="white">
                     {videos.snippet.title.slice(0,60)}
                 </Typography>
-                <Link to="/">
+                <Link to={`channel/${videos.snippet.channelId}`}>
                 <Typography variant="subtitle2" fontWeight="bold" color='gray'>
                     {videos.snippet.channelTitle}
                     <CheckCircle sx={{
