@@ -27,7 +27,7 @@ export const categories : Category[] = [
   { name: 'Coding', icon: CodeIcon, },
   { name: 'ReactJS', icon: CodeIcon, },
   { name: 'NextJS', icon: CodeIcon, },
-  { name: 'elzero web school', icon: MusicNoteIcon  },
+  { name: 'elzero web school', icon: CodeIcon  },
   { name: 'Education', icon: SchoolIcon , },
   { name: 'Podcast', icon: GraphicEqIcon , },
   { name: 'Movie', icon: OndemandVideoIcon , },

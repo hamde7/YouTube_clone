@@ -14,9 +14,9 @@ export default function Feed(){
         setSelected(name);
     }
     return (
-        <Stack sx={{flexDirection:{sx : "column" , sm:"row"}}}>
+        <Stack  spacing={2} sx={{ margin : 'auto'  , flexDirection:{sx : "column" , sm:"row"}}}>
             <Sidebar selected={selected} setSelected={setSelectedFunction}/>
             <MainArea selected={selected} videos={videos} />
-        </Stack>
+        </Stack>   
     )
 }

@@ -11,8 +11,7 @@ export default function Sidebar({setSelected , selected } :SelectedType){
         px:{sx:0 , sm:2}
         }}>
             <Stack direction="row" sx={{ 
-                overflowY:"auto",
-                height:"100%",
+                
                 flexDirection:{sm:"column"} ,
                 overflow:"scroll"}}>
                 {categories.map((cate)=>{
